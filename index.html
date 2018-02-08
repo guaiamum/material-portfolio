@@ -1,22 +1,84 @@
+<!DOCTYPE html>
+<html>
 
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-      <title>$ git st</title>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- MATERIALIZE -->
-      <link rel="stylesheet" href="css/materialize/css/materialize.min.css">
-      <!-- jQuery -->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="css/materialize/js/materialize.min.js"></script>
+<head>
+  <!-- Tab -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <title>$ whoami</title>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <body>
-      <div class="card-panel teal lighten-2"><h3>Hello World!</h3></div>
-    </body>
-  </html>
+  <!-- MATERIALIZE -->
+  <link rel="stylesheet" href="css/materialize/css/materialize.min.css">
+
+  <!-- MATERIALIZE -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+
+  <!-- <div class="hide-on-med-and-down"> -->
+    <div id="slide-out" class="side-nav fixed">
+      <div class="container" id="profile-info">
+
+        <img class="circle" src="images/user.png" id="user-img" height="180px" width="180px">
+
+        <p id="profile-subtitle">Something</p>
+        <p id="profile-name">Nome Sobrenome</p>
+
+        <div class="footer">
+          <a><img class="circle" src="images/links/github.png" id="github-link" height="30px" width="30px"></a>
+          <a><img class="circle" src="images/links/instagram.png" id="instagram-link" height="30px" width="30px"></a>
+          <a><img class="circle" src="images/links/medium.png" id="medium-link" height="30px" width="30px"></a>
+          <a><img class="circle" src="images/links/linkedin.png" id="linkedin-link" height="30px" width="30px"></a>
+        </div>
+
+      </div>
+    </div>
+  <!-- </div> -->
+
+  <div class="" id="space">
+    <ul class="tabs">
+      <li class="tab">
+        Me
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="css/materialize/js/materialize.min.js"></script>
+<script src="js/dinamicInfo.js"></script>
+<script>
+  $(function() {
+    loadInfo(caina);
+    // $('#open-sidebar').sideNav({
+    //   menuWidth: "25%",
+    //   edge: 'left',
+    //   closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    //   draggable: true, // Choose whether you can drag to open on touch screens,
+    // });
+    // // $('#open-sidebar').sideNav('show');
+  })
+
+  var caina = {
+    name: "Cainã Brazil",
+    subtitle: "Undergraduate in Computer Engineering",
+    thumbnail: "../../Dropbox/Pictures/perfis/perfil_face-SQUARE.jpg",
+    links: [
+      {id:'#github-link',href:"https://github.com/guaiamum"},
+      {id:'#instagram-link',href:"https://www.instagram.com/_guaiamum/"},
+      {id:'#medium-link',href:"https://medium.com/@cainbrazil"},
+      {id:'#linkedin-link',href:"https://www.linkedin.com/in/cainã-brazil-586379114/"},
+    ],
+  }
+</script>
+
+</html>

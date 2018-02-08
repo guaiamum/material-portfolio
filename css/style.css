@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* NAVBAR PROFILE BACKGROUND COLOR SET HERE */
+.side-nav {
+  min-height: 100vh;
+  background-color: #1c1c4a; /* OR #39004d; */
+}
+
+#profile-info {
+  margin-top: 25vh;
+  padding-right: 0px;
+  /* TEXT */
+  text-align: center;
+  color: #eceff1;
+}
+
+/* MAIN BACKGROUND COLOR SET HERE */
+#space {
+  background-color: rgb(34, 36, 48); /* OR rgb(43, 29, 48); */
+  height: 100vh;
+}
+
+/* LINKS SECTION */
+div.footer {
+  margin-top: 40vh;
+  height: 30px;
+}
+
+/* ************** */
+/* PROFILE FIELDS */
+#profile-subtitle {
+  font-size: 10pt;
+  color: gray;
+  margin: 2px;
+}
+
+#profile-name {
+  font-weight: bold;
+  font-size: 20pt;
+}
