@@ -21,62 +21,77 @@
 </head>
 
 <body>
+  <div class="row" id="only">
 
-  <!-- <div class="hide-on-med-and-down"> -->
-    <div id="slide-out" class="side-nav fixed">
-      <div class="container" id="profile-info">
-
+    <div class="col s12 l3 hide-on-med-and-down container" id="profile-info">
+      <!-- NAVBAR PROFILE -->
+      <div id="info">
         <img class="circle" src="images/user.png" id="user-img" height="180px" width="180px">
 
         <p id="profile-subtitle">Something</p>
         <p id="profile-name">Nome Sobrenome</p>
-
-        <div class="footer">
-          <a><img class="circle" src="images/links/github.png" id="github-link" height="30px" width="30px"></a>
-          <a><img class="circle" src="images/links/instagram.png" id="instagram-link" height="30px" width="30px"></a>
-          <a><img class="circle" src="images/links/medium.png" id="medium-link" height="30px" width="30px"></a>
-          <a><img class="circle" src="images/links/linkedin.png" id="linkedin-link" height="30px" width="30px"></a>
-        </div>
-
       </div>
+
+      <footer>
+        <a><img class="circle" src="images/links/github.png" id="github-link"></a>
+        <a><img class="circle" src="images/links/instagram.png" id="instagram-link"></a>
+        <a><img class="circle" src="images/links/medium.png" id="medium-link"></a>
+        <a><img class="circle" src="images/links/linkedin.png" id="linkedin-link"></a>
+      </footer>
     </div>
-  <!-- </div> -->
 
-  <div class="" id="space">
-    <ul class="tabs">
-      <li class="tab">
-        Me
-      </li>
-    </ul>
+    <div class="col s12 l9" id="main">
+      <!-- MAIN CONTENT  -->
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#me">Me</a></li>
+            <li class="tab col s3"><a href="#skills">Skills</a></li>
+            <li class="tab col s3"><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
+        <div id="me" class="col s12">ME ME ME</div>
+        <div id="skills" class="col s12">SKILLS SKILLS SKILLS</div>
+        <div id="experience" class="col s12">XP XP XP XP</div>
+      </div>
+
+    </div>
+
   </div>
-
 </body>
 
 <!-- jQuery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script src="css/materialize/js/materialize.min.js"></script>
 <script src="js/dinamicInfo.js"></script>
+<script src="js/materializeInit.js"></script>
 <script>
   $(function() {
     loadInfo(caina);
-    // $('#open-sidebar').sideNav({
-    //   menuWidth: "25%",
-    //   edge: 'left',
-    //   closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    //   draggable: true, // Choose whether you can drag to open on touch screens,
-    // });
-    // // $('#open-sidebar').sideNav('show');
+    tabs();
   })
 
   var caina = {
     name: "Cainã Brazil",
     subtitle: "Undergraduate in Computer Engineering",
     thumbnail: "../../Dropbox/Pictures/perfis/perfil_face-SQUARE.jpg",
-    links: [
-      {id:'#github-link',href:"https://github.com/guaiamum"},
-      {id:'#instagram-link',href:"https://www.instagram.com/_guaiamum/"},
-      {id:'#medium-link',href:"https://medium.com/@cainbrazil"},
-      {id:'#linkedin-link',href:"https://www.linkedin.com/in/cainã-brazil-586379114/"},
+    links: [{
+        id: '#github-link',
+        href: "https://github.com/guaiamum"
+      },
+      {
+        id: '#instagram-link',
+        href: "https://www.instagram.com/_guaiamum/"
+      },
+      {
+        id: '#medium-link',
+        href: "https://medium.com/@cainbrazil"
+      },
+      {
+        id: '#linkedin-link',
+        href: "https://www.linkedin.com/in/cainã-brazil-586379114/"
+      },
     ],
   }
 </script>

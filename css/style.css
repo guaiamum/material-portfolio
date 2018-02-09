@@ -1,38 +1,63 @@
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+:root {
+  --main: rgb(34, 36, 48); /* OR rgb(43, 29, 48); */
+  --second: #1c1c4a; /* OR #39004d; */
+  --third: #eff0eb;
 }
 
-main {
-  flex: 1 0 auto;
+body{
+  color: var(--third);
 }
 
-/* NAVBAR PROFILE BACKGROUND COLOR SET HERE */
-.side-nav {
-  min-height: 100vh;
-  background-color: #1c1c4a; /* OR #39004d; */
+#only {
+  margin: 0;
+  padding: 0;
 }
 
+
+/* ************** */
+/* NAVBAR PROFILE */
 #profile-info {
-  margin-top: 25vh;
-  padding-right: 0px;
+  background-color: var(--second);
+  display: flex;
+  flex-direction: column;
+  padding-top: 25vh;
+  min-height: 100vh;
   /* TEXT */
   text-align: center;
-  color: #eceff1;
 }
 
+#profile-info #info {
+  flex: 1;
+}
+
+#profile-info footer img {
+  height: 35px;
+  width: 35px;
+  margin: 5px;
+}
+
+
+
+
+/* ************** */
 /* MAIN BACKGROUND COLOR SET HERE */
-#space {
-  background-color: rgb(34, 36, 48); /* OR rgb(43, 29, 48); */
-  height: 100vh;
+#main {
+  background-color: var(--main);
+  padding: 0px;
+  min-height: 100vh;
 }
 
-/* LINKS SECTION */
-div.footer {
-  margin-top: 40vh;
-  height: 30px;
+/* TABS STYLING */
+.tabs {
+  background-color: inherit;
 }
+.tabs a {
+    color: var(--third) !important;
+}
+.tabs .indicator {
+    background-color: var(--third) !important;
+}
+
 
 /* ************** */
 /* PROFILE FIELDS */
