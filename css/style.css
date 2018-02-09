@@ -1,10 +1,12 @@
 :root {
-  --main: rgb(34, 36, 48); /* OR rgb(43, 29, 48); */
-  --second: #1c1c4a; /* OR #39004d; */
+  --main: rgb(34, 36, 48);
+  /* OR rgb(43, 29, 48); */
+  --second: #1c1c4a;
+  /* OR #39004d; */
   --third: #eff0eb;
 }
 
-body{
+body {
   color: var(--third);
 }
 
@@ -13,10 +15,11 @@ body{
   padding: 0;
 }
 
-
 /* ************** */
+
 /* NAVBAR PROFILE */
-#profile-info {
+
+#profile-nav {
   background-color: var(--second);
   display: flex;
   flex-direction: column;
@@ -26,21 +29,19 @@ body{
   text-align: center;
 }
 
-#profile-info #info {
+#profile-nav #info {
   flex: 1;
 }
 
-#profile-info footer img {
+#profile-nav footer img {
   height: 35px;
   width: 35px;
   margin: 5px;
 }
 
-
-
-
 /* ************** */
 /* MAIN BACKGROUND COLOR SET HERE */
+
 #main {
   background-color: var(--main);
   padding: 0px;
@@ -48,19 +49,32 @@ body{
 }
 
 /* TABS STYLING */
+.tabs-container, ul.tabs {
+  background-color: #282a36;
+  padding: 0 !important;
+}
 .tabs {
   background-color: inherit;
 }
+
 .tabs a {
-    color: var(--third) !important;
-}
-.tabs .indicator {
-    background-color: var(--third) !important;
+  color: var(--third) !important;
 }
 
+.tabs a.active {
+  background-color: var(--main) !important;
+  border-top: 3px solid var(--third);
+}
+
+.tabs .indicator {
+  display: none;
+  /* background-color: var(--third) !important; */
+}
 
 /* ************** */
+
 /* PROFILE FIELDS */
+
 #profile-subtitle {
   font-size: 10pt;
   color: gray;

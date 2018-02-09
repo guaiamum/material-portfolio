@@ -1,5 +1,5 @@
 function loadInfo(user){
-  var profileInfo = $('#profile-info');
+  var profileInfo = $('#profile-nav');
 
   // MAIN INFO
   profileInfo.find('#profile-subtitle').html(user.subtitle);
