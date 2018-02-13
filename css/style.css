@@ -1,12 +1,12 @@
 :root {
-  --main: rgb(34, 36, 48);
-  /* OR rgb(43, 29, 48); */
+  --main: #222430;/* #282a36 */
+  --main-fade: #2a2d3c;
   --second: #1c1c4a;
-  /* OR #39004d; */
   --third: #eff0eb;
 }
 
 body {
+  background-color: var(--second); /* FIXING SCROL WITH NAVBAR, TEMPORARILY*/
   color: var(--third);
 }
 
@@ -21,6 +21,7 @@ body {
 
 #profile-nav {
   background-color: var(--second);
+  position:  fixed;
   display: flex;
   flex-direction: column;
   padding-top: 25vh;
@@ -44,13 +45,22 @@ body {
 
 #main {
   background-color: var(--main);
+  position:  static;
   padding: 0px;
   min-height: 100vh;
 }
 
+#content {
+  margin: 120px 10px 0px 10px;
+}
+
+#key-concepts {
+}
+
 /* TABS STYLING */
 .tabs-container, ul.tabs {
-  background-color: #282a36;
+  position:  static;
+  background-color: var(--main-fade);
   padding: 0 !important;
 }
 .tabs {
@@ -71,9 +81,19 @@ body {
   /* background-color: var(--third) !important; */
 }
 
+#me .row {
+  text-transform: uppercase;
+  /* background-color: var(--main-fade); */
+  padding: 10px;
+  margin-top: 30vh;
+  border: 1px solid var(--main);
+}
+
+
+
 /* ************** */
 
-/* PROFILE FIELDS */
+/* DINAMIC FIELDS */
 
 #profile-subtitle {
   font-size: 10pt;
@@ -82,6 +102,25 @@ body {
 }
 
 #profile-name {
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 24pt;
+}
+
+.me-small {
+  text-transform: uppercase;
+  font-size: 16pt;
+}
+
+.me-big {
+  text-transform: uppercase;
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+.me-big-right {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 24pt;
+  font-weight: bold;
 }

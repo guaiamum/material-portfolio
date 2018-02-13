@@ -12,7 +12,7 @@
   <!-- MATERIALIZE -->
   <link rel="stylesheet" href="css/materialize/css/materialize.min.css">
 
-  <!-- MATERIALIZE -->
+  <!-- MY OWN -->
   <link rel="stylesheet" href="css/style.css">
 
   <!--Let browser know website is optimized for mobile-->
@@ -42,17 +42,53 @@
 
     <div class="col s12 l9" id="main">
       <!-- MAIN CONTENT  -->
-      <div class="row">
-        <div class="col s12 tabs-container">
-          <ul class="tabs">
-            <li class="tab col s3"><a class="active" href="#me">Me</a></li>
-            <li class="tab col s3"><a href="#skills">Skills</a></li>
-            <li class="tab col s3"><a href="#experience">Experience</a></li>
-          </ul>
+
+      <!-- TAB LINKS  -->
+      <div class="col s12 tabs-container">
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab col s3"><a class="active" href="#me">Me</a></li>
+          <li class="tab col s3"><a href="#skills">Skills</a></li>
+          <li class="tab col s3"><a href="#experience">Experience</a></li>
+          <li class="tab col s3"><a href="#more"> ... </a></li>
+        </ul>
+      </div>
+
+      <div class="row" id="content">
+        <!-- MAIN CONTENT  -->
+        <div id="me" class="row">
+
+          <div class="row">
+            <p class="me-small">I believe in <span class="me-big">Simplicity</span></p>
+          </div>
+
+          <div class="row">
+            <div class="col s12 l6">
+              <p class="me-small">Interests</p>
+              <hr/>
+              <ul>
+                <li><span class="me-big">User experience</span></li>
+                <li class="me-big-right"><span>Open Source</span></li>
+              </ul>
+            </div>
+            <div class="col l6"></div>
+          </div>
+
+          <div class="row" id="key-concepts">
+            Transitivo: <i>(sub.)</i> aquele que transita??
+          </div>
+
         </div>
-        <div id="me" class="col s12">ME ME ME</div>
-        <div id="skills" class="col s12">SKILLS SKILLS SKILLS</div>
+
+        <div id="skills" class="col s12">
+          <div class="row">
+
+          </div>
+        </div>
+
         <div id="experience" class="col s12">XP XP XP XP</div>
+
+        <div id="more" class="col s12">LALALLA</div>
+
       </div>
 
     </div>
@@ -68,6 +104,8 @@
 <script src="js/materializeInit.js"></script>
 <script>
   $(function() {
+    // SHOW NAVBAR PROFILE ON MOBILE DEVICES
+    // $('#profile-nav').removeClass('hide-on-med-and-down');$('#profile-nav').show();
     loadInfo(caina);
     tabs();
   })
