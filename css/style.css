@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: var(--second); /* FIXING SCROL WITH NAVBAR, TEMPORARILY*/
+  background-color: var(--second); /* FIXING SCROLL WITH NAVBAR, TEMPORARILY*/
   color: var(--third);
 }
 
@@ -45,6 +45,7 @@ body {
 
 #main {
   background-color: var(--main);
+  /* margin-left: auto; */
   position:  static;
   padding: 0px;
   min-height: 100vh;
