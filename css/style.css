@@ -25,13 +25,19 @@ a {
 
 #profile-nav {
   background-color: var(--second);
-  position:  fixed;
+  position:  sticky;
   display: flex;
   flex-direction: column;
   padding-top: 25vh;
   min-height: 100vh;
   /* TEXT */
   text-align: center;
+}
+
+@media (max-width: 700px){
+  #profile-nav {
+    min-height: 90vh;
+  }
 }
 
 #profile-nav #info {
@@ -139,4 +145,28 @@ a {
   text-align: right;
   font-size: 24pt;
   font-weight: bold;
+}
+
+/* ************** */
+
+/*  */
+
+.skills-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.skill {
+  min-height: 156px;
+
+  background-color: #ccc;
+  border-radius: 5px;
+  color: var(--main);
+  font-size: 40;
+}
+
+.skill img{
+  /* flex:initial; */
+  width: 100%;
 }
