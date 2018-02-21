@@ -10,6 +10,10 @@ body {
   color: var(--third);
 }
 
+a {
+  color: #fff;
+}
+
 #only {
   margin: 0;
   padding: 0;
@@ -40,6 +44,13 @@ body {
   margin: 5px;
 }
 
+ #navbar-toggle {
+   float: left;
+   position: relative;
+   left: 10px;
+   margin: auto 0;
+ }
+
 /* ************** */
 /* MAIN BACKGROUND COLOR SET HERE */
 
@@ -51,7 +62,7 @@ body {
   min-height: 100vh;
 }
 
-#content {
+#main-content {
   margin: 120px 10px 0px 10px;
 }
 
@@ -80,6 +91,10 @@ body {
 .tabs .indicator {
   display: none;
   /* background-color: var(--third) !important; */
+}
+
+.tabs i.material-icons{ /*ADJUSTS ICONS*/
+  margin-top:0.5em;
 }
 
 #me .row {

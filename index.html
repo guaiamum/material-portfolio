@@ -30,6 +30,10 @@
 
         <p id="profile-subtitle">Something</p>
         <p id="profile-name">Nome Sobrenome</p>
+
+        <!-- <div class="hide-on-med-and-down" id="navbar-toggle">
+          <a href="#"><i class="material-icons">chevron_right</i></a>
+        </div> -->
       </div>
 
       <footer>
@@ -43,61 +47,58 @@
     <div class="col s12 offset-l3 l9" id="main">
       <!-- MAIN CONTENT  -->
 
-      <!-- <div class="left">
-      <!-- NAVBAR ACTIVATOR  --
-        <a href="#"><i class="material-icons">chevron_right</i></a>
-      </div> -->
-
-      <!-- <div class="right"> -->
-        <div class="col s12 tabs-container">
+      <div class="col s12 tabs-container">
         <!-- TAB LINKS  -->
-          <ul class="tabs tabs-fixed-width">
-            <li class="tab col s3"><a class="active" href="#me">Me</a></li>
-            <li class="tab col s3"><a href="#skills">Skills</a></li>
-            <li class="tab col s3"><a href="#experience">Experience</a></li>
-            <li class="tab col s3"><a href="#more"> ... </a></li>
-          </ul>
-        </div>
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab col s3"><a class="active" href="#me">Me</a></li>
+          <li class="tab col s3"><a href="#skills">Skills</a></li>
+          <li class="tab col s3"><a href="#experience">Experience</a></li>
+          <li class="tab col s3"><a href="#more"> <i class="material-icons">more_horiz</i></a></li>
+        </ul>
+      </div>
 
-        <div class="row" id="content">
+      <div class="row" id="main-content">
         <!-- MAIN CONTENT  -->
-          <div id="me" class="row">
 
-            <div class="row">
-              <p class="me-small">I believe in <span class="me-big">Simplicity</span></p>
-            </div>
+        <section class="row" id="me">
 
-            <div class="row">
-              <div class="col s12 l6">
-                <p class="me-small">Interests</p>
-                <hr/>
-                <ul>
-                  <li><span class="me-big">User experience</span></li>
-                  <li class="me-big-right"><span>Open Source</span></li>
-                </ul>
-              </div>
-              <div class="col l6"></div>
-            </div>
-
-            <div class="row" id="key-concepts">
-              Transitivo: <i>(sub.)</i> aquele que transita??
-            </div>
-
+          <div class="row">
+            <p class="me-small">I believe in <span class="me-big">Simplicity</span></p>
           </div>
 
-          <div id="skills" class="col s12">
-            <div class="row">
-
+          <div class="row">
+            <div class="col s12 l6">
+              <p class="me-small">Areas of Interest</p>
+              <hr/>
+              <ul>
+                <li><span class="me-big">User experience</span></li>
+                <li class="me-big-right"><span>Open Source</span></li>
+                <li><span class="me-big">Artificial Inteligence</span></li>
+                <li class="me-big-right"><span>Security</span></li>
+              </ul>
             </div>
+            <div class="col l6"></div>
           </div>
 
-          <div id="experience" class="col s12">XP XP XP XP</div>
+          <!-- <div class="row" id="key-concepts"> Transitivo: <i>(sub.)</i> que passa rapidamente<div> -->
 
-          <div id="more" class="col s12">LALALLA</div>
+        </section>
+        <!-- END ME -->
 
-        </div>
+        <section id="skills" class="col s12">
+          <div class="row">
 
-      <!-- </div> -->
+          </div>
+        </section>
+        <!-- END SKILLS -->
+
+        <section id="experience" class="col s12">XP XP XP XP</section>
+        <!-- END EXPERIENCES -->
+
+        <section id="more" class="col s12">LALALLA</section>
+        <!-- END MORE -->
+
+      </div>
     </div>
 
   </div>
@@ -113,6 +114,12 @@
   $(function() {
     // SHOW NAVBAR PROFILE ON MOBILE DEVICES
     // $('#profile-nav').removeClass('hide-on-med-and-down');$('#profile-nav').show();
+    // $('#navbar-toggle').on('click', function() {
+    //   $('#profile-nav').removeClass('l3');
+    //   $('#main').removeClass('offset-l3');
+    //
+    // });
+
     loadInfo(caina);
     tabs();
   })
