@@ -6,8 +6,9 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
   <title>$ whoami</title>
 
-  <!--Import Google Icon Font-->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
 
   <!-- MATERIALIZE -->
   <link rel="stylesheet" href="css/materialize/css/materialize.min.css">
@@ -86,20 +87,19 @@
         <!-- END ME -->
 
         <section id="skills" class="col s12">
-          <div class="container">
-            <div class="row">
-              <p id="skills-have">SKILLS I HAVE</p>
-              <hr/>
+          <h5>SKILLS I HAVE</h5>
+          <hr/>
+          <div class="row">
+            <div class="skills-container" id="skills-have">
 
-              <div class="skills-container">
-                <div class="skill">
-                  <!-- <img class="circle" src="images/user.png" id="user-img" height="180px" width="180px"> -->
-                  <img src="images/skills/have/1.png" alt="">
-                </div>
-                  <div class="skill">
-                    . NET
-                  </div>
-              </div>
+            </div>
+          </div>
+
+          <h5>SKILLS I WANT TO DEVELOP</h5>
+          <hr/>
+          <div class="row">
+            <div class="skills-container" id="skills-want">
+
             </div>
           </div>
         </section>
@@ -125,14 +125,6 @@
 <script src="js/materializeInit.js"></script>
 <script>
   $(function() {
-    // SHOW NAVBAR PROFILE ON MOBILE DEVICES
-    // $('#profile-nav').removeClass('hide-on-med-and-down');$('#profile-nav').show();
-    // $('#navbar-toggle').on('click', function() {
-    //   $('#profile-nav').removeClass('l3');
-    //   $('#main').removeClass('offset-l3');
-    //
-    // });
-
     loadInfo(caina);
     tabs();
   })
@@ -158,6 +150,15 @@
         href: "https://www.linkedin.com/in/cainã-brazil-586379114/"
       },
     ],
+    //skills
+    skills: [
+      {title: 'C#', description: '3 years. Game scripts and Web development'},
+      {title: '.NET', description: '2 years. Web development, mainly with E.R.P.\'s'},
+      {title: 'PHP', description: '1 month. Game scripts and Web development'},
+      {title: 'JS', description: '3 years. Web page scripts and mobile development'},
+      {title: '<img src="images/skills/have/reactNative.png"/>', description: '1 month. Simple apps for experimenting'},
+
+    ]
   }
 </script>
 

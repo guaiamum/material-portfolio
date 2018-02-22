@@ -9,4 +9,13 @@ function loadInfo(user){
   user.links.forEach((e) => {
     profileInfo.find(e.id).closest('a').attr('href',e.href);
   });
+
+  // SKILLS
+  var skillsHave = $('#skills-have');
+  user.skills.forEach((e) => {
+    skillsHave.append(
+      $('<div>',{class:'skill'}).append(
+        $('<div>',{class:'skill-content'}).append(
+          $('<div>',{class:'center-flex',html: e.title}))));
+  });
 }

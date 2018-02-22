@@ -1,12 +1,14 @@
 :root {
-  --main: #222430;/* #282a36 */
+  --main: #222430;
+  /* #282a36 */
   --main-fade: #2a2d3c;
   --second: #1c1c4a;
   --third: #eff0eb;
 }
 
 body {
-  background-color: var(--second); /* FIXING SCROLL WITH NAVBAR, TEMPORARILY*/
+  background-color: var(--second);
+  /* FIXING SCROLL WITH NAVBAR, TEMPORARILY*/
   color: var(--third);
 }
 
@@ -25,7 +27,7 @@ a {
 
 #profile-nav {
   background-color: var(--second);
-  position:  sticky;
+  position: sticky;
   display: flex;
   flex-direction: column;
   padding-top: 25vh;
@@ -34,7 +36,7 @@ a {
   text-align: center;
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   #profile-nav {
     min-height: 90vh;
   }
@@ -50,20 +52,21 @@ a {
   margin: 5px;
 }
 
- #navbar-toggle {
-   float: left;
-   position: relative;
-   left: 10px;
-   margin: auto 0;
- }
+#navbar-toggle {
+  float: left;
+  position: relative;
+  left: 10px;
+  margin: auto 0;
+}
 
 /* ************** */
+
 /* MAIN BACKGROUND COLOR SET HERE */
 
 #main {
   background-color: var(--main);
   /* margin-left: auto; */
-  position:  static;
+  position: static;
   padding: 0px;
   min-height: 100vh;
 }
@@ -72,15 +75,16 @@ a {
   margin: 120px 10px 0px 10px;
 }
 
-#key-concepts {
-}
+#key-concepts {}
 
 /* TABS STYLING */
+
 .tabs-container, ul.tabs {
-  position:  static;
+  position: static;
   background-color: var(--main-fade);
   padding: 0 !important;
 }
+
 .tabs {
   background-color: inherit;
 }
@@ -99,8 +103,9 @@ a {
   /* background-color: var(--third) !important; */
 }
 
-.tabs i.material-icons{ /*ADJUSTS ICONS*/
-  margin-top:0.5em;
+.tabs i.material-icons {
+  /*ADJUSTS ICONS*/
+  margin-top: 0.5em;
 }
 
 #me .row {
@@ -110,8 +115,6 @@ a {
   margin-top: 30vh;
   border: 1px solid var(--main);
 }
-
-
 
 /* ************** */
 
@@ -149,24 +152,64 @@ a {
 
 /* ************** */
 
-/*  */
+/* SKILL SECTION */
 
 .skills-container {
   display: flex;
-  /* align-items: center; */
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .skill {
-  min-height: 156px;
-
-  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 2%;
+  /* align-content: center; */
+  /* SQUARE */
+  position: relative;
+  width: 15%;
+  padding-bottom: 15%;
+  /* SQUARE PRETTY */
   border-radius: 5px;
-  color: var(--main);
-  font-size: 40;
+  background-color: var(--third);
 }
 
-.skill img{
-  /* flex:initial; */
+.skill-content {
+  flex: 1;
+  position: absolute;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  /* PADDING */
+  height: 90%; /* = 100% - 2*5% padding */
+  width: 90%; /* = 100% - 2*5% padding */
+  padding: 5%;
+  /* FONT */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--main);
+  /* CENTERING */
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .skill {
+    width: 20%;
+    padding-bottom: 20%;
+  }
+  .skill-content {
+    font-size: 30px;
+  }
+}
+
+/* CENTERS IN ALL DIRECTIONS IF PARENT IS display: flex;*/
+.center-flex {
+  margin: auto;
+}
+
+.skill img {
   width: 100%;
+  height: 100%;
 }
