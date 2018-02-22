@@ -14,8 +14,12 @@ function loadInfo(user){
   var skillsHave = $('#skills-have');
   user.skills.forEach((e) => {
     skillsHave.append(
-      $('<div>',{class:'skill'}).append(
+      $('<div>',{class:'skill tooltipped','data-position':'bottom','data-tooltip': e.description}).append(
         $('<div>',{class:'skill-content'}).append(
           $('<div>',{class:'center-flex',html: e.title}))));
   });
+
+
+  //Initializes tooltipped's object's
+  $('.tooltipped').tooltip({delay: 50});
 }
