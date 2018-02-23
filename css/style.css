@@ -16,6 +16,11 @@ a {
   color: #fff;
 }
 
+h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 #only {
   margin: 0;
   padding: 0;
@@ -85,9 +90,10 @@ a {
 #key-concepts {}
 
 /* TABS STYLING */
-
-.tabs-container, ul.tabs {
+.tabs-container {
   position: static;
+  /* position: fixed;
+  max-width: 100%; */
   background-color: var(--main-fade);
   padding: 0 !important;
 }
@@ -101,6 +107,7 @@ a {
 }
 
 .tabs a.active {
+  font-weight: bold;
   background-color: var(--main) !important;
   border-top: 3px solid var(--third);
 }
@@ -117,10 +124,10 @@ a {
 
 #me .row {
   text-transform: uppercase;
-  /* background-color: var(--main-fade); */
   padding: 10px;
-  margin-top: 30vh;
-  border: 1px solid var(--main);
+  padding-top: 30vh;
+  /* background-color: var(--main-fade);
+  border: 1px solid var(--main); */
 }
 
 /* ************** */
@@ -164,7 +171,7 @@ a {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .skill {
@@ -219,4 +226,38 @@ a {
 .skill img {
   width: 100%;
   height: 100%;
+}
+
+
+/* ************** */
+
+/* EXPERIENCES SECTION */
+
+.xps-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.xp {
+  margin-bottom: 10%;
+}
+
+.xp li {
+  margin-left: 5%;
+  list-style-type: disc !important;
+}
+
+.job-location, .job-duration {
+  font-size: 9pt;
+}
+
+.job-description {
+  font-size: 14pt;
+
+}
+
+.job-tasks {
+  font-size: 12pt;
+
 }

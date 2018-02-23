@@ -4,7 +4,7 @@
 <head>
   <!-- Tab -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <title>$ whoami</title>
+  <title> whoami</title>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -53,7 +53,8 @@
         <ul class="tabs tabs-fixed-width">
           <li class="tab col s3"><a class="active" href="#me">Me</a></li>
           <li class="tab col s3"><a href="#skills">Skills</a></li>
-          <li class="tab col s3"><a href="#experience">Experience</a></li>
+          <li class="tab col s3"><a href="#experience">Job Experience</a></li>
+          <li class="tab col s3"><a href="#academia">Academia</a></li>
           <li class="tab col s3"><a href="#more"> <i class="material-icons">more_horiz</i></a></li>
         </ul>
       </div>
@@ -68,7 +69,7 @@
           </div>
 
           <div class="row">
-            <div class="col s12 l6">
+            <div class="col s12 offset-l6 l6">
               <p class="me-small">Areas of Interest</p>
               <hr/>
               <ul>
@@ -78,7 +79,7 @@
                 <li class="me-big-right"><span>Security</span></li>
               </ul>
             </div>
-            <div class="col l6"></div>
+            <!-- <div class="col l6"></div> -->
           </div>
 
           <!-- <div class="row" id="key-concepts"> Transitivo: <i>(sub.)</i> que passa rapidamente<div> -->
@@ -105,7 +106,18 @@
         </section>
         <!-- END SKILLS -->
 
-        <section id="experience" class="col s12">XP XP XP XP</section>
+        <section id="experience" class="col s12">
+          <div class="row xps-container" id="experiences">
+
+          </div>
+        </section>
+        <!-- END EXPERIENCES -->
+
+        <section id="academia" class="col s12">
+          <div class="row acad-container" id="schools">
+
+          </div>
+        </section>
         <!-- END EXPERIENCES -->
 
         <section id="more" class="col s12">LALALLA</section>
@@ -123,44 +135,73 @@
 <script src="css/materialize/js/materialize.min.js"></script>
 <script src="js/dinamicInfo.js"></script>
 <script src="js/materializeInit.js"></script>
+<script src="js/me.js"></script>
 <script>
   $(function() {
-    loadInfo(caina);
+    loadInfo(me);
     tabs();
   })
 
-  var caina = {
-    name: "Cainã Brazil",
-    subtitle: "Undergraduate in Computer Engineering",
-    thumbnail: "../../Dropbox/Pictures/perfis/perfil_face-SQUARE.jpg",
-    links: [{
-        id: '#github-link',
-        href: "https://github.com/guaiamum"
-      },
-      {
-        id: '#instagram-link',
-        href: "https://www.instagram.com/_guaiamum/"
-      },
-      {
-        id: '#medium-link',
-        href: "https://medium.com/@cainbrazil"
-      },
-      {
-        id: '#linkedin-link',
-        href: "https://www.linkedin.com/in/cainã-brazil-586379114/"
-      },
-    ],
-    //skills
-    skills: [
-      {title: 'C#', description: '3 years. Game scripts and Web development'},
-      {title: '.NET', description: '2 years. Web development, mainly with E.R.P.\'s'},
-      {title: 'PHP', description: '1 month. Web development in a start-up company'},
-      {title: 'Yii', description: '1 month. Web development in a start-up company'},
-      {title: 'JS', description: '3 years. Web page scripts and mobile development'},
-      {title: '<img src="images/skills/have/reactNative.png" alt="React Native"/>', description: 'React Native: 1 month. Simple apps for experimenting'},
-
-    ]
-  }
+  //{
+  //   name: "Cainã Brazil",
+  //   subtitle: "Undergraduate in Computer Engineering",
+  //   thumbnail: "../../Dropbox/Pictures/perfis/perfil_face-SQUARE.jpg",
+  //   links: [{
+  //       id: '#github-link',
+  //       href: "https://github.com/guaiamum"
+  //     },
+  //     {
+  //       id: '#instagram-link',
+  //       href: "https://www.instagram.com/_guaiamum/"
+  //     },
+  //     {
+  //       id: '#medium-link',
+  //       href: "https://medium.com/@cainbrazil"
+  //     },
+  //     {
+  //       id: '#linkedin-link',
+  //       href: "https://www.linkedin.com/in/cainã-brazil-586379114/"
+  //     },
+  //   ],
+  //   //skills
+  //   skills: [{
+  //       title: 'C#',
+  //       description: '3 years. Game scripts and Web development, Api\'s, etc...'
+  //     },
+  //     {
+  //       title: '.NET',
+  //       description: '2 years. Web development, mainly with E.R.P.\'s'
+  //     },
+  //     {
+  //       title: '<img src="images/skills/have/xamarin.png" alt="Xamarin"/>',
+  //       description: 'Xamarin: 1 month. Maintenance in app developed for a big company'
+  //     },
+  //     {
+  //       title: 'API',
+  //       description: '1 year. Created and maintained some API\'s for mobile comsumption'
+  //     },
+  //     {
+  //       title: 'PHP',
+  //       description: '1 month. Web development in a start-up company'
+  //     },
+  //     {
+  //       title: 'Yii',
+  //       description: '1 month. Web development in a start-up company'
+  //     },
+  //     {
+  //       title: 'JS',
+  //       description: '3 years. Web page scripts and mobile development'
+  //     },
+  //     {
+  //       title: '<img src="images/skills/have/reactNative.png" alt="React Native"/>',
+  //       description: 'React Native: 1 month. Simple apps for experimenting'
+  //     },
+  //   ],
+  //   skillsWanted: [{
+  //     title: '<img src="images/skills/want/python.png" alt="Python"/>',
+  //     description: 'Python: seems like a "do it all" simple programming language, with lots of frameworks'
+  //   }, ],
+  // }
 </script>
 
 </html>
