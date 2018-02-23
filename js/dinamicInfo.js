@@ -32,22 +32,26 @@ function loadInfo(user){
 
 // EXPERIENCES
   user.jobs.forEach((e,i) => {
-    var container = $('#experiences');
+    var container = $('#experiences').find('#cd-timeline');
 
-    var div = $('<div>',{class: 'xp col'})
-    var title = $('<h5>',{ html: e.subtitle });
+    var div = $('<div>',{class: 'cd-timeline-block'});
+    var circle = $('<div>',{class: 'cd-timeline-img'});
+    var content = $('<div>',{class: 'cd-timeline-content'});
+
+    var title = $('<h2>',{ class: 'job-title' ,html: e.title });
 
     var map = '<i class="tiny material-icons">location_on</i> ';
-    var location = $('<p>',{ class: 'job-location', html: map + e.company + ', ' + e.location });
-
+    var location = $('<span>',{ class: 'job-location cd-location cd-date', html: map + e.company + ', ' + e.location });
     var calendar = '<i class="tiny material-icons">date_range</i> ';
-    var duration = $('<p>',{ class: 'job-duration', html: calendar + e.dateBegin +' - '+ e.dateEnd });
+    var duration = $('<span>',{ class: 'job-duration cd-date', html: calendar + e.dateBegin +' - '+ e.dateEnd });
 
     var description = $('<p>',{ class: 'job-description',html: e.description });
     var tasks =  $('<ul>', { class: 'job-tasks'});
     e.tasks.forEach((task) => {var currTask = $('<li>',{ html: task }); tasks.append(currTask);});
 
-    container.append(div.append(title,'<hr/>',location,duration,description.append(tasks)));
+    content.append(title,'<hr/>',description.append(tasks),location,'<br/>',duration);
+    container.append(div.append(circle,content));
   });
+
 
 }

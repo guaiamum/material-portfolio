@@ -53,6 +53,10 @@ var me = {
       title: '<img src="images/skills/have/reactNative.png" alt="React Native"/>',
       description: 'React Native: 1 month. Simple apps for experimenting'
     },
+    {
+      title: 'SQL',
+      description: '3 years. Mainly worked with SQLServer Management studio, and a little with PhpMyAdmin.'
+    },
   ],
   skillsWanted: [{
     title: '<img src="images/skills/want/python.png" alt="Python"/>',
@@ -61,7 +65,7 @@ var me = {
   // EXPERIENCES
   jobs: [{
       company: 'Open System',
-      subtitle: 'Software development internship',
+      title: 'Software development internship',
       dateBegin: 'Jun 2017',
       dateEnd: 'Feb 2018',
       location: 'Salvador, BA',
@@ -71,7 +75,7 @@ var me = {
     },
     {
       company: 'Viva inovação',
-      subtitle: 'Web development internship',
+      title: 'Web development internship',
       dateBegin: 'Mar 2017',
       dateEnd: 'Jun 2017',
       location: 'Salvador, BA',
@@ -80,7 +84,7 @@ var me = {
       // 'Great progress in a major project inside the company (C# Asp.Net MVC5 SQLServer)','Maintenance in PHP Yii framework project (MySQL PhpMyAdmin)'
     }, {
       company: 'Ufba',
-      subtitle: 'Game development internship',
+      title: 'Game development internship',
       dateBegin: 'Mar 2016',
       dateEnd: 'Mar 2017',
       location: 'Salvador, BA',

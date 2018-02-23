@@ -3,6 +3,7 @@
   /* #282a36 */
   --main-fade: #2a2d3c;
   --second: #1c1c4a;
+  --second-light: #313181;
   --third: #eff0eb;
 }
 
@@ -10,6 +11,7 @@ body {
   background-color: var(--second);
   /* FIXING SCROLL WITH NAVBAR, TEMPORARILY*/
   color: var(--third);
+  box-sizing: border-box;
 }
 
 a {
@@ -232,32 +234,20 @@ h5 {
 /* ************** */
 
 /* EXPERIENCES SECTION */
-
-.xps-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
+/*.job-title {
+  font-size: 26pt;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.xp {
-  margin-bottom: 10%;
-}
-
-.xp li {
-  margin-left: 5%;
-  list-style-type: disc !important;
-}
-
-.job-location, .job-duration {
+ .job-location, .job-duration {
   font-size: 9pt;
 }
 
 .job-description {
   font-size: 14pt;
-
 }
 
 .job-tasks {
   font-size: 12pt;
-
-}
+} */
