@@ -69,8 +69,8 @@ var me = {
       dateBegin: 'Jun 2017',
       dateEnd: 'Feb 2018',
       location: 'Salvador, BA',
-      description: 'Here I helped to develop great solutions to clients, and to keep and raise the name of a company that has more than 25 years in the market providing integrated mobile solutions for big retail companies.',
-      tasks: ['Modeling the database using SQL Server and Code-first Migrations', 'ASP.NET MVC development and multi-layer architecture', 'Front-end design using variable plugins in JavaScript, CSS and Bootstrap, etc', 'Developed WebAPI to provide data to mobile devices connected and receive information from other APIs', 'Full-stack development for mobile devices (android) using Xamarin']
+      description: 'Developed great solutions to clients, and to keep and raise the name of a company that has more than 25 years in the market providing integrated mobile solutions for big retail companies.',
+      tasks: ['Modeling the database using SQL Server and Code-first Migrations', 'ASP.NET MVC development and multi-layer architecture', 'Front-end design using various plugins in JavaScript, CSS and Bootstrap, etc', 'Developed WebAPI to provide data to mobile devices connected and receive information from other APIs', 'Full-stack development for mobile devices (android) using Xamarin']
       // 'Initial development of big international, multi-language web-system, with mobile interface (C# Asp.Net MVC5 Xamarin SQLServer)'
     },
     {
