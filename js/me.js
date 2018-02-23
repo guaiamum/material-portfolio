@@ -2,7 +2,7 @@ var me = {
   // PROFILE
   name: "Cainã Brazil",
   subtitle: "Undergraduate in Computer Engineering",
-  thumbnail: "../../Dropbox/Pictures/perfis/perfil_face-SQUARE.jpg",
+  thumbnail: "images/me.jpg",
   links: [{
       id: '#github-link',
       href: "https://github.com/guaiamum"
