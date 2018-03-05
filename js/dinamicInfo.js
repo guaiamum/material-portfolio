@@ -48,8 +48,29 @@ function loadInfo(user){
     var description = $('<p>',{ class: 'job-description',html: e.description });
     var tasks =  $('<ul>', { class: 'job-tasks'});
     e.tasks.forEach((task) => {var currTask = $('<li>',{ html: task }); tasks.append(currTask);});
+    //var thanks = $('<small>',{html: e.thanks});
 
     content.append(title,'<hr/>',description.append(tasks),location,'<br/>',duration);
+    container.append(div.append(circle,content));
+  });
+
+// EDUCATION
+  user.schools.forEach((e,i) => {
+    var container = $('#education').find('#cd-timeline');
+
+    var div = $('<div>',{class: 'cd-timeline-block'});
+    var circle = $('<div>',{class: 'cd-timeline-img verde'});
+    var content = $('<div>',{class: 'cd-timeline-content'});
+
+    var title = $('<h2>',{ class: 'school-title' ,html: e.title });
+
+    var calendar = '<i class="tiny material-icons">date_range</i> ';
+    var duration = $('<span>',{ class: 'school-duration cd-date cd-location', html: calendar + e.dateBegin +' - '+ e.dateEnd });
+
+    var location = $('<h4>',{ html: '<i class="tiny material-icons">location_on</i> ' + e.location});
+    var description = $('<h4>',{ class: 'school-description',html: e.name});
+
+    content.append(title, description, location ,'<br/>',duration);
     container.append(div.append(circle,content));
   });
 

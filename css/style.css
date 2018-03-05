@@ -60,11 +60,23 @@ h5 {
   margin: 5px;
 }
 
-#navbar-toggle {
+/* #navbar-toggle {
   float: left;
   position: relative;
   left: 10px;
   margin: auto 0;
+} */
+
+#profile-subtitle {
+  font-size: 10pt;
+  color: gray;
+  margin: 2px;
+}
+
+#profile-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24pt;
 }
 
 /* ************** */
@@ -86,10 +98,8 @@ h5 {
 }
 
 #main-content {
-  margin: 120px 10px 0px 10px;
+  margin: 0 10px;
 }
-
-#key-concepts {}
 
 /* TABS STYLING */
 .tabs-container {
@@ -124,28 +134,16 @@ h5 {
   margin-top: 0.5em;
 }
 
+/* ************** */
+
+/* ME SECTION */
+
 #me .row {
   text-transform: uppercase;
   padding: 10px;
-  padding-top: 30vh;
+  padding-top: 40vh;
   /* background-color: var(--main-fade);
   border: 1px solid var(--main); */
-}
-
-/* ************** */
-
-/* DINAMIC FIELDS */
-
-#profile-subtitle {
-  font-size: 10pt;
-  color: gray;
-  margin: 2px;
-}
-
-#profile-name {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 24pt;
 }
 
 .me-small {
@@ -169,6 +167,9 @@ h5 {
 /* ************** */
 
 /* SKILL SECTION */
+#skills {
+  padding: 5vh 0;
+}
 
 .skills-container {
   display: flex;
@@ -216,7 +217,7 @@ h5 {
     padding-bottom: 20%;
   }
   .skill-content {
-    font-size: 30px;
+    font-size: 27px;
   }
 }
 
@@ -251,3 +252,21 @@ h5 {
 .job-tasks {
   font-size: 12pt;
 } */
+
+/* ************** */
+/* EDUCATION SECTION */
+
+/* ************** */
+/* MORE SECTION */
+#more {
+  padding-top: 5vh;
+}
+
+.spin {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

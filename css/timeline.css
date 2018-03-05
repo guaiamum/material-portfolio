@@ -17,13 +17,13 @@
 Main components
 -------------------------------- */
 
-
 #cd-timeline {
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
 #cd-timeline::before {
   content: '';
   position: absolute;
@@ -33,6 +33,11 @@ Main components
   width: 4px;
   background: var(--second-light);
 }
+
+#cd-timeline.verde::before {
+  background: #339933;
+}
+
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
     margin-top: 3em;
@@ -79,10 +84,14 @@ Main components
   height: 30px;
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--second-light), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-}
-.cd-timeline-img {
   background: var(--second);
 }
+
+.cd-timeline-img.verde{
+  box-shadow: 0 0 0 4px #339933, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  background: #1f601f;
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
     width: 30px;
@@ -183,6 +192,11 @@ Main components
   font-weight: bold;
   font-size: 24px;
   font-size: 1.25rem;
+}
+.cd-timeline-content h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 1rem;
 }
 .cd-timeline-content p {
   font-size: 16px;

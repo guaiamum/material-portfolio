@@ -58,10 +58,20 @@ var me = {
       description: '3 years. Mainly worked with SQLServer Management studio, and a little with PhpMyAdmin.'
     },
   ],
-  skillsWanted: [{
-    title: '<img src="images/skills/want/python.png" alt="Python"/>',
-    description: 'Python: seems like a "do it all" simple programming language, with lots of frameworks'
-  }, ],
+  skillsWanted: [
+    {
+      title: '<img src="images/skills/want/python.png" alt="Python"/>',
+      description: 'Python: seems like a "do it all" simple programming language, with lots of frameworks'
+    },
+    {
+      title: '<img src="images/skills/want/lock.png" alt="Security"/>',
+      description: 'Network security'
+    },
+    {
+      title: '<img src="images/skills/want/all.png" class="spin" alt="Loading"/>',
+      description: 'I want to continue learning about everything! Specially mobile development...'
+    },
+  ],
   // EXPERIENCES
   jobs: [{
       company: 'Open System',
@@ -90,6 +100,43 @@ var me = {
       location: 'Salvador, BA',
       description: 'Multi-subject Federal University project',
       tasks: ['From ground zero made an entire virtual world of my University Campus, including terrain, buildings, streets and main architecture characteristics', 'Participants from different areas of knowledge, like: arts, architecture, computer science', 'Used Sketchup 3D to convert the work done by architecture students to models that could be used in the Unity 3D platform', 'Used terrain plugins to create roads and adapt the terrain imported from the city database to the new building that were being put \'on top of it\'', 'Developed my C# skills with scripts to control the user inputs and animations around the Campus']
+    },
+  ],
+  schools: [
+    {
+      title: 'System\'s Engineering exchange graduation',
+      name: 'ISEP - Instituto Politécnico do Porto',
+      dateBegin: 'jan 2014',
+      dateEnd: 'dez 2014',
+      location: 'Porto, Portugal',
+    },
+    {
+      title: 'Computer Engineering ongoing graduation',
+      name: 'UFBA - Unversidade Federal da Bahia',
+      dateBegin: 'jan 2015',
+      dateEnd: 'ongoing',
+      location: 'Salvador, BA',
+    },
+    {
+      title: 'Architecture and Urbanism Incomplete graduation',
+      name: 'UFBA - Unversidade Federal da Bahia',
+      dateBegin: 'jan 2014',
+      dateEnd: 'dez 2014',
+      location: 'Salvador, BA',
+    },
+    {
+      title: 'High School',
+      name: 'Instituto Social da Bahia',
+      dateBegin: '1 B.C.',
+      dateEnd: '2013',
+      location: 'Salvador, BA',
+    },
+    {
+      title: 'English School for international students',
+      name: 'ILSC',
+      dateBegin: 'fev 2012',
+      dateEnd: 'nov 2012',
+      location: 'San Francisco, CA',
     },
   ],
 } //END ME
