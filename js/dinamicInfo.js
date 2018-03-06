@@ -35,7 +35,7 @@ function loadInfo(user){
     var container = $('#experiences').find('#cd-timeline');
 
     var div = $('<div>',{class: 'cd-timeline-block'});
-    var circle = $('<div>',{class: 'cd-timeline-img'});
+    var circle = $('<div>',{class: 'cd-timeline-img amarelo'}); //YELLOW
     var content = $('<div>',{class: 'cd-timeline-content'});
 
     var title = $('<h2>',{ class: 'job-title' ,html: e.title });
@@ -59,7 +59,7 @@ function loadInfo(user){
     var container = $('#education').find('#cd-timeline');
 
     var div = $('<div>',{class: 'cd-timeline-block'});
-    var circle = $('<div>',{class: 'cd-timeline-img verde'});
+    var circle = $('<div>',{class: 'cd-timeline-img verde'}); //GREEN
     var content = $('<div>',{class: 'cd-timeline-content'});
 
     var title = $('<h2>',{ class: 'school-title' ,html: e.title });
@@ -67,10 +67,10 @@ function loadInfo(user){
     var calendar = '<i class="tiny material-icons">date_range</i> ';
     var duration = $('<span>',{ class: 'school-duration cd-date cd-location', html: calendar + e.dateBegin +' - '+ e.dateEnd });
 
-    var location = $('<h4>',{ html: '<i class="tiny material-icons">location_on</i> ' + e.location});
-    var description = $('<h4>',{ class: 'school-description',html: e.name});
+    // var location = $('<h4>',{ html: '<i class="tiny material-icons">location_on</i> ' + e.location});
+    var description = $('<h4>',{ class: 'school-description',html: '<i class="tiny material-icons">location_on</i> ' + e.name + " - " + e.location});
 
-    content.append(title, description, location ,'<br/>',duration);
+    content.append(title, description, location ,duration);
     container.append(div.append(circle,content));
   });
 

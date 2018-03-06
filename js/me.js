@@ -106,8 +106,8 @@ var me = {
     {
       title: 'System\'s Engineering exchange graduation',
       name: 'ISEP - Instituto Politécnico do Porto',
-      dateBegin: 'jan 2014',
-      dateEnd: 'dez 2014',
+      dateBegin: 'fev 2018',
+      dateEnd: 'ongoing',
       location: 'Porto, Portugal',
     },
     {

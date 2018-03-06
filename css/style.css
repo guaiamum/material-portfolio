@@ -2,9 +2,15 @@
   --main: #222430;
   /* #282a36 */
   --main-fade: #2a2d3c;
-  --second: #1c1c4a;
+  /* --second: #1c1c4a;
+  --second-light: #313181; */
+  --second: #145629;
   --second-light: #313181;
   --third: #eff0eb;
+  --accent-one: #339933;
+  --accent-one-dark: #1f601f;
+  --accent-two: #F7E418;
+  --accent-two-dark: #9E8C32;
 }
 
 body {

@@ -35,7 +35,11 @@ Main components
 }
 
 #cd-timeline.verde::before {
-  background: #339933;
+  background: var(--accent-one);
+}
+
+#cd-timeline.amarelo::before {
+  background: var(--accent-two);
 }
 
 @media only screen and (min-width: 1170px) {
@@ -86,10 +90,13 @@ Main components
   box-shadow: 0 0 0 4px var(--second-light), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   background: var(--second);
 }
-
 .cd-timeline-img.verde{
-  box-shadow: 0 0 0 4px #339933, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-  background: #1f601f;
+  box-shadow: 0 0 0 4px var(--accent-one), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  background: var(--accent-one-dark);
+}
+.cd-timeline-img.amarelo{
+  box-shadow: 0 0 0 4px var(--accent-two), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  background: var(--accent-two-dark);
 }
 
 @media only screen and (min-width: 1170px) {
